@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTS EVENTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h3>AVV Campus Sports Meet</h3>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h2>SPORT EVENTS</h2>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Event ID</th>
+        <th>Event Name</th>
+        <th>Category</th>
+        <th>Date/Time</th>
+        <th>Venue</th>
+        <th>Fee</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>Cric101</td>
+        <td>Cricket</td>
+        <td>Team</td>
+        <td>24-May-2026 / 3PM</td>
+        <td>Cricket Ground</td>
+        <td>200</td>
+        <td>Open</td>
+    </tr>
+
+    <tr>
+        <td>Kab181</td>
+        <td>Kabaddi</td>
+        <td>Team</td>
+        <td>22-May-2026 / 5PM</td>
+        <td>Multipurpose Hall</td>
+        <td>150</td>
+        <td>Open</td>
+    </tr>
+
+    <tr>
+        <td>Foot101</td>
+        <td>Football</td>
+        <td>Team</td>
+        <td>26-May-2026 / 2PM</td>
+        <td>Football Ground</td>
+        <td>250</td>
+        <td>Closed</td>
+    </tr>
+    </tbody>
+</table>
+
+<br><br>
+
+<h2>Student Registration</h2>
+
+<form id="sportsForm">
+
+    Student Name:
+    <input type="text" id="sname"><br><br>
+
+    Registration Number:
+    <input type="text" id="reg1"><br><br>
+
+    Student Email:
+    <input type="email" id="email1"><br><br>
+
+    Mobile Number:
+    <input type="tel" id="phone1"><br><br>
+
+    Department:
+    <select id="dep1">
+        <option value="">Select</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>MEC</option>
+    </select><br><br>
+
+    Year:
+    <select id="year">
+        <option value="">Select</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+    </select><br><br>
+
+    Event:
+    <select id="name1">
+        <option value="">Select Event</option>
+        <option>Cricket</option>
+        <option>Kabaddi</option>
+        <option>Football</option>
+        <option>Badminton</option>
+        <option>Basketball</option>
+    </select><br><br>
+
+    Participation Type:
+    <select id="ptype">
+        <option value="">Select</option>
+        <option>Team</option>
+        <option>Solo</option>
+        <option>Duo</option>
+    </select><br><br>
+
+    Team Name:
+    <input type="text" id="tname"><br><br>
+
+    Team Members:
+    <input type="number" id="tnum"><br><br>
+
+    <button type="button" onclick="add()">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+<br><br>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Reg No</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Department</th>
+        <th>Year</th>
+        <th>Event</th>
+        <th>Type</th>
+        <th>Team Name</th>
+        <th>Team Size</th>
+    </tr>
+    </thead>
+
+    <tbody id="body">
+
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
